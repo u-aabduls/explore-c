@@ -1,0 +1,7 @@
+#!/bin/bash
+
+./mmaparray --ind 10 --delete --print
+
+# out:
+# index: 3, name: George, age: 3.000000
+# index: 4, name: Guston, age: 110.000000

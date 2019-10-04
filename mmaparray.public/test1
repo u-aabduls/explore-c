@@ -1,0 +1,9 @@
+#!/bin/bash
+make clean
+make
+/bin/rm namedb
+./mmaparray --index 20 --create
+wc namedb
+
+# out:
+# 1    0 2240 namedb

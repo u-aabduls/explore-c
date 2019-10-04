@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./mmaparray --index 3 --get
+
+# out:
+# index: 3, name: George, age: 3.000000

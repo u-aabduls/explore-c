@@ -1,0 +1,9 @@
+#!/bin/bash
+./mmaparray --index 10 --name Minas --age 10 --set
+./mmaparray --index 4 --name Guston --age 110 --set
+./mmaparray --index 3 --name George --age 3 --set --print
+
+# out:
+# index: 3, name: George, age: 3.000000
+# index: 4, name: Guston, age: 110.000000
+# index: 10, name: Minas, age: 10.000000
