@@ -1,0 +1,10 @@
+#!/bin/bash
+
+make clean
+make
+rm -f test.in
+echo Hello world> test.in
+./marker cat - -p- wc -z
+cat test.out
+cat test.err1
+cat test.err2

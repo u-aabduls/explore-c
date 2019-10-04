@@ -1,0 +1,8 @@
+#!/bin/bash
+
+make clean
+make
+rm -f test.in
+touch test.in
+./marker echo Hello -p- echo World
+cat test.out

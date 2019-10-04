@@ -1,0 +1,8 @@
+#!/bin/bash
+
+make clean
+make
+rm -f test.in
+echo Hello world> test.in
+./marker awk '{print $2}' -p- wc -c
+cat test.out
