@@ -4,12 +4,12 @@ NAME
 	mmaparray -- tool used to create, inspect, and modify arrays that exist on the disk as files
 
 SYNOPSIS
-	mmaparray [--filename char *s1] [--index int] [--name char *s2] [--age int] [--set] [--get] [--create] [--print] [--maxindex] [--delete]
+	mmaparray [--filename char *s1] [--index int] [--name char *s2] [--age int] [--set] [--get] [--create] [--print]                         [--maxindex] [--delete]
 
 DESCRIPTION
 	The program mmaparray uses the mmap system call to access and modify arrays that exist on the disk as files. 
 
-	The program mmaparray memory maps files and manipulates them as an array. Manipulation and access of the contents in the arrays is done through the following command line           arguments:
+	The program mmaparray memory maps files and manipulates them as an array. Manipulation and access of the contents in 	     the arrays is done through the following command line arguments:
 
 		--filename	the filename of the file to be accessed
 		--index		the index to be used
@@ -32,7 +32,7 @@ EXAMPLE
 
 		./mmaparray --filename file1 --index 3 --name Alice --age 19 --set --print 
 
-	will insert an entry with name Alice and age 19 at index 3 of file file1, and then 	      print all the entries currently in the array.
+	will insert an entry with name Alice and age 19 at index 3 of file file1, and then print all the entries currently in 	      the array.
 
 	The command:
 
